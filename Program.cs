@@ -12,19 +12,21 @@ namespace InterativeStatementAndrewGreen
             Console.WriteLine("Enter an integer between 2 and 10:");
                       
             int num = Convert.ToInt32(Console.ReadLine());
-                                  
-            if (num%2 == 1)
-                
-                for(int i = 1; i < num;i++)
-              
-            {
-                Console.WriteLine("You entered an odd number");     
-            }
-            else
+            
+            if (num % 2 == 1)
 
-                for (int i = 1; i < num; i++)
+                for (int i = 0; i < num-1;i++)
+
                 {
-                Console.WriteLine("You entered an even number");
+                    Console.WriteLine(num + "You entered an odd number");
+                }
+
+            else
+                
+                for (int i = 0; i < num+1;i++)
+
+                {
+                Console.WriteLine(num + "You entered an even number");
             }
 
         }
